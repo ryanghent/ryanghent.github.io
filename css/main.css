@@ -46,7 +46,6 @@ a.name::after {
   position: inherit;
   display:block;
   width: 100%;
-  max-width: 150px;
   transform: scaleX(0);
   height: 3px;
   bottom: 0;
@@ -119,6 +118,11 @@ a.name:hover::after {
 
 .dropdown:hover .dropbtn {
   color: #227756;
+}
+
+/* Allow dropdown menu to be toggled with a click, for touchscreens */
+.show {
+  display: block;
 }
 
 /*******************************************/
