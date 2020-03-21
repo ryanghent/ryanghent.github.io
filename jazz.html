@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta id="view" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ryan Ghent - Jazz</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -12,8 +13,8 @@
       <a href= "/" class="name">R.Ghent</a>
       <a href="/about.html">About&nbsp;&nbsp;<img src="/img/X.png"></a>
       <div class="dropdown">
-        <button class="dropbtn">Hobbies&nbsp;&nbsp;<img src="/img/X.png"></button>
-        <div class="dropdown-content">
+        <button class="dropbtn" onclick="droptoggle()">Hobbies&nbsp;&nbsp;<img src="/img/X.png"></button>
+        <div class="dropdown-content" id="myDropdown">
           <a href="/dance.html">Dance</a>
           <a href="/sailing.html">Sailing</a>
           <a href="/climbing.html">Climbing</a>
@@ -33,5 +34,24 @@
       <p>&nbsp;&nbsp;&nbsp;&nbsp;I have played with the National Youth Jazz Orchestra, the award winning saxophonist Phil Meadows, and now I play in jazz jams in Oxford. Here is a photo from Jazz Soc at the Mad Hatter, playing with Garfunkel, of which I hope to be a member next year.</p>
     </div>
   </div>
+    
+    <!-- Allow the dropdown menu to be accessed on touchscreens -->
+  <script>
+/* When the user clicks on the dropdown,
+toggle between hiding and showing the dropdown content */
+function droptoggle() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 </body>
 </html>
