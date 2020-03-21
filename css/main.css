@@ -308,14 +308,47 @@ p {
 /*******************************/
 /* Responsive layout - when the screen is less than 500px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 550px) {
+  header {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+  }
   .bar a {
+    text-align:center;
+    padding-left: 52px;
     float: none;
-    text-align: right;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .bar a.name {
+    text-align:center;
+    padding-left: 10px;
+  }
+  .bar img {
+    float: none;
+  }
+  .dropdown{
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  button {
+    text-align:center;
+    padding-left: 52px;
+    float: none;
+    display: block;
     width: 100%;
     padding-bottom: 30px;
   }
-  .bar a.name {
-    text-align:left;
+
+  .dropdown-content a{
+    padding-left: 0px;
+    display: block;
+    width: 100%;
+  }
+  .dropdown-content{
+    width: 100%;
   }
 }
 
