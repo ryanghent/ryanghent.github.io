@@ -69,6 +69,11 @@ a.name:hover::after {
   color: #403F40;
 }
 
+/* Remove border on all pages */
+body {
+  margin: 0;
+}
+
 /***********************************/
 /* Dropdown menu for hobbies */
 .dropbtn {
@@ -358,7 +363,12 @@ p {
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other, and put the photos second */
+/* and make the content headers (h4) smaller */
 @media screen and (max-width: 800px) {
+  h4 {
+    font-size: 72px;
+  }
+
   .row {
     flex-direction: column;
   }
