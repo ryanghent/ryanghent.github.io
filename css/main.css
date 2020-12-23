@@ -366,7 +366,8 @@ p {
 /* and make the content headers (h4) smaller */
 @media screen and (max-width: 800px) {
   h4 {
-    font-size: 72px;
+    font-size: 60px;
+    padding-left:0px;
   }
 
   .row {
