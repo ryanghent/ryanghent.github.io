@@ -133,7 +133,7 @@ body {
 /*******************************************/
 /* Background for homepage*/
 .home{
-  background: url("/img/Chch2.jpg") no-repeat center;
+  background: url("/img/home.jpg") no-repeat center;
   background-size: cover;
   height: 800px;
   position: relative;
@@ -221,7 +221,7 @@ p {
 .dancephoto {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
-  background: url("/img/Dance.jpg") no-repeat top;
+  background: url("/img/dance.jpg") no-repeat top;
   background-size: cover;
   height: 100%;
   min-height: 800px;
@@ -259,7 +259,7 @@ p {
 .sailingtext {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
-  background-color: #7083A6;
+  background-color: #403F40;
   color: #FFFFFF;
   padding: 30px;
 }
@@ -272,7 +272,7 @@ p {
 .climbingphoto {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
-  background: url("/img/Climbing2.jpg") no-repeat top;
+  background: url("/img/Climbing.jpg") no-repeat top;
   background-size: cover;
   height: 100%;
   min-height: 800px;
@@ -309,9 +309,29 @@ p {
 .abouttext {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
-  background-color: #227756;
+  background-color: #881E2B;
   color: #FFFFFF;
   padding: 30px;
+}
+
+/* unvisited link */
+a.paper:link {
+ color: white;
+}
+
+/* visited link */
+a.paper:visited {
+ color: #CFCDC9;
+}
+
+/* mouse over link */
+a.paper:hover {
+ color: #F5F4EE;
+}
+
+/* selected link */
+a.paper:active {
+ color: #CFCDC9;
 }
 
 /*******************************/

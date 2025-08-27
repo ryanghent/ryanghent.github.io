@@ -1,3 +1,3 @@
 # ryanghent.github.io
-A website about me:
+A website about me, Ryan Ghent:
 ryanghent.github.io
