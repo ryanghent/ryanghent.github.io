@@ -221,7 +221,7 @@ p {
 .dancephoto {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
-  background: url("/img/dance.jpg") no-repeat top;
+  background: url("/img/Dance.jpg") no-repeat top;
   background-size: cover;
   height: 100%;
   min-height: 800px;
